@@ -10,8 +10,10 @@ import UIKit
 
 class detailsViewController: UIViewController {
 
-    @IBOutlet var imageToShow: UIImageView!
     @IBOutlet var bikeDetailsToShow: UILabel!
+    @IBOutlet var teamDetailsToShow: UILabel!
+    @IBOutlet var bikeManufacturerToShow: UILabel!
+    @IBOutlet var imageToShow: UIImageView!
     
     var rider = ["":""]
 
@@ -19,9 +21,13 @@ class detailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let temp = rider["name"]
-        println("The rider team here is \(temp)")
-        bikeDetailsToShow.text = temp
+        let tempRider = rider["name"]
+        let teamName = rider["team"]
+        let tempBikeManufacturer = rider["bikemanufacturer"]
+        teamDetailsToShow.text = teamName
+        bikeDetailsToShow.text = tempRider
+        bikeManufacturerToShow.text = tempBikeManufacturer
+        imageToShow.image =  UIImage(named: rider["image"]!)
         }
 
     override func didReceiveMemoryWarning() {

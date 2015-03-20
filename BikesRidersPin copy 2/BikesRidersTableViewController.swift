@@ -30,15 +30,18 @@ class BikesRidersTableViewController: UITableViewController {
     //i cant add an image (actual picture) so the return display will be missing a pictue
     func addNewContact(name : String, team : String, bikemanufacturer: String, image: String)
     {
-        self.riders.append(
-            [
+        //checking for blank names
+        if (name != "" || team != "" || bikemanufacturer != "" || image != "") {
+            self.riders.append(
+                [
                 "name"                  : name,
                 "team"                  : team,
                 "bikemanufacturer"      : bikemanufacturer,
                 "image"                 : image
-            ])
+                ])
         
-        tableView.reloadData()
+            tableView.reloadData()
+        }
     }
     
     @IBAction func unwindFromAddNewRiderViewController(segue:UIStoryboardSegue)
@@ -111,13 +114,9 @@ class BikesRidersTableViewController: UITableViewController {
 
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            //tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-           
-            println("I am pressing delete")
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            riders.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
         }    
     }
 
