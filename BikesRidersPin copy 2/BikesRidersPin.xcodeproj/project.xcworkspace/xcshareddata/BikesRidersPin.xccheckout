@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5BC72908-53E5-43F7-A057-29261702D49B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BikesRidersPin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E9DCFF6FB082FD33D2231D509B43484D4672D375</key>
+		<string>https://github.com/indyjoel/test.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BikesRidersPin copy 2/BikesRidersPin.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E9DCFF6FB082FD33D2231D509B43484D4672D375</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/indyjoel/test.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E9DCFF6FB082FD33D2231D509B43484D4672D375</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E9DCFF6FB082FD33D2231D509B43484D4672D375</string>
+			<key>IDESourceControlWCCName</key>
+			<string>test</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lEo-av-r0S">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bikes Riders Table View Controller-->
+        <scene sceneID="QRb-17-hhg">
+            <objects>
+                <tableViewController id="eQE-zk-IcY" customClass="BikesRidersTableViewController" customModule="BikesRidersPin" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="WWi-aH-IXO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="o9f-00-uXw" customClass="CustomTableViewCell" customModule="BikesRidersPin" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o9f-00-uXw" id="VsX-Hc-UmI">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mx-Pr-4Vk">
+                                            <rect key="frame" x="15" y="10" width="60" height="60"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s6-pX-hiy">
+                                            <rect key="frame" x="118" y="10" width="323" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bike:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cav-P9-awf">
+                                            <rect key="frame" x="118" y="49" width="284" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06m-w2-VBy">
+                                            <rect key="frame" x="118" y="28" width="300" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bikeLabel" destination="Cav-P9-awf" id="aA2-TJ-0IV"/>
+                                    <outlet property="nameLabel" destination="3s6-pX-hiy" id="ltr-5q-TXy"/>
+                                    <outlet property="teamLabel" destination="06m-w2-VBy" id="5qJ-7K-aDu"/>
+                                    <outlet property="thumbnailImageView" destination="4mx-Pr-4Vk" id="mhr-Z5-r2v"/>
+                                    <segue destination="v6Y-MW-jGc" kind="show" identifier="showBikeDetails" id="Fry-OI-UOa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eQE-zk-IcY" id="bLo-fv-I7i"/>
+                            <outlet property="delegate" destination="eQE-zk-IcY" id="y3x-HK-K4y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="i2a-S9-7Ll">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JHI-nH-MKu">
+                            <connections>
+                                <segue destination="NEe-nG-1zw" kind="presentation" identifier="addNewRider" id="UYI-my-HIB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkY-Ew-c23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269" y="-707"/>
+        </scene>
+        <!--Add New Rider-->
+        <scene sceneID="aaF-MZ-1k4">
+            <objects>
+                <viewController id="oSN-Oq-yZh" customClass="AddNewRiderViewController" customModule="BikesRidersPin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vjN-iz-1GZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mno-Hv-MBz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r7G-cs-v6S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rider Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-aS-3gk">
+                                <rect key="frame" x="16" y="101" width="316" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="316" id="W6M-Ha-u7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rider Team" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVP-oM-JTC">
+                                <rect key="frame" x="16" y="157" width="316" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bike Manufacturer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKA-Lx-Wr7">
+                                <rect key="frame" x="16" y="217" width="316" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Image Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HiK-mQ-yZF">
+                                <rect key="frame" x="16" y="272" width="316" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uKA-Lx-Wr7" firstAttribute="trailing" secondItem="wVP-oM-JTC" secondAttribute="trailing" id="ApK-sA-ijf"/>
+                            <constraint firstItem="uKA-Lx-Wr7" firstAttribute="top" secondItem="wVP-oM-JTC" secondAttribute="bottom" constant="30" id="Hp8-wo-P4s"/>
+                            <constraint firstItem="hsj-aS-3gk" firstAttribute="top" secondItem="vjN-iz-1GZ" secondAttribute="bottom" constant="37" id="QK1-JU-mQM"/>
+                            <constraint firstItem="wVP-oM-JTC" firstAttribute="leading" secondItem="hsj-aS-3gk" secondAttribute="leading" id="Zog-QO-IwM"/>
+                            <constraint firstItem="hsj-aS-3gk" firstAttribute="leading" secondItem="r7G-cs-v6S" secondAttribute="leadingMargin" id="g7W-qy-wL5"/>
+                            <constraint firstItem="hsj-aS-3gk" firstAttribute="trailing" secondItem="wVP-oM-JTC" secondAttribute="trailing" id="gml-Xt-Fee"/>
+                            <constraint firstItem="wVP-oM-JTC" firstAttribute="top" secondItem="hsj-aS-3gk" secondAttribute="bottom" constant="26" id="lMA-AB-iq9"/>
+                            <constraint firstItem="uKA-Lx-Wr7" firstAttribute="leading" secondItem="wVP-oM-JTC" secondAttribute="leading" id="yfX-vv-QlK"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Wyp-in-9aI"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Add New Rider" id="e0O-nY-woM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4C2-zC-EW3">
+                            <connections>
+                                <segue destination="gwK-k1-u04" kind="unwind" unwindAction="unwindFromAddNewRiderViewController:" id="abL-vK-KR2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bikeManufacturer" destination="uKA-Lx-Wr7" id="kSS-sf-PiO"/>
+                        <outlet property="imageName" destination="HiK-mQ-yZF" id="Que-9A-e4t"/>
+                        <outlet property="riderName" destination="hsj-aS-3gk" id="YXv-5r-gD3"/>
+                        <outlet property="riderTeam" destination="wVP-oM-JTC" id="hen-Si-dHb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8L-YM-7xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gwK-k1-u04" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4248" y="-717"/>
+        </scene>
+        <!--tes-->
+        <scene sceneID="rI8-NI-eF2">
+            <objects>
+                <viewController title="tes" id="v6Y-MW-jGc" customClass="detailsViewController" customModule="BikesRidersPin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ag7-NT-evF"/>
+                        <viewControllerLayoutGuide type="bottom" id="NK5-ox-EWd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nxb-9A-JPc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="rrr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzZ-dv-RHQ">
+                                <rect key="frame" x="16" y="140" width="568" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riders Details:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOg-qe-hK1">
+                                <rect key="frame" x="16" y="85" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hOP-md-BU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="test"/>
+                        <constraints>
+                            <constraint firstItem="BzZ-dv-RHQ" firstAttribute="trailing" secondItem="oOg-qe-hK1" secondAttribute="trailing" id="1UM-0W-edO"/>
+                            <constraint firstItem="NK5-ox-EWd" firstAttribute="top" secondItem="BzZ-dv-RHQ" secondAttribute="bottom" constant="400" id="Y30-dx-4BM"/>
+                            <constraint firstItem="BzZ-dv-RHQ" firstAttribute="top" secondItem="oOg-qe-hK1" secondAttribute="bottom" constant="34" id="fzm-8h-jrS"/>
+                            <constraint firstItem="oOg-qe-hK1" firstAttribute="top" secondItem="ag7-NT-evF" secondAttribute="bottom" constant="21" id="hJe-sV-AOC"/>
+                            <constraint firstItem="oOg-qe-hK1" firstAttribute="leading" secondItem="BzZ-dv-RHQ" secondAttribute="leading" id="pQE-q9-V0H"/>
+                            <constraint firstItem="oOg-qe-hK1" firstAttribute="trailing" secondItem="Nxb-9A-JPc" secondAttribute="trailingMargin" id="rBy-vk-YbZ"/>
+                            <constraint firstItem="oOg-qe-hK1" firstAttribute="leading" secondItem="Nxb-9A-JPc" secondAttribute="leadingMargin" id="ybl-FQ-9Ph"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="i8X-rn-dOt"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bikeDetailsToShow" destination="BzZ-dv-RHQ" id="3Xo-fy-hGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IP1-0D-c4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2261" y="98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="khE-k3-4XZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lEo-av-r0S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ADK-YE-Lqm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="m0l-0N-LQs">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="eQE-zk-IcY" kind="relationship" relationship="rootViewController" id="CQe-dt-3J3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bL-no-UZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="-717"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gyb-gO-e4k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NEe-nG-1zw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gag-G3-UG6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oSN-Oq-yZh" kind="relationship" relationship="rootViewController" id="IRO-d6-ix3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nG-yC-LcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3398" y="-717"/>
+        </scene>
+    </scenes>
+</document>

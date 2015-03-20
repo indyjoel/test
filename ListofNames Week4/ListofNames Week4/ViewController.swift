@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    //var name : String?
     var contact = ["":""]
    
     

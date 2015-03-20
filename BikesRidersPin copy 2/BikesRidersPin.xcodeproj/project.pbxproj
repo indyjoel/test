@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D34D5491ABBC66A0082DD94 /* AddNewRiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34D5481ABBC66A0082DD94 /* AddNewRiderViewController.swift */; };
+		1D34D54B1ABBCD470082DD94 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34D54A1ABBCD470082DD94 /* detailsViewController.swift */; };
+		FF2131D91AB9720C00351B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2131D81AB9720C00351B18 /* AppDelegate.swift */; };
+		FF2131DE1AB9720C00351B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2131DC1AB9720C00351B18 /* Main.storyboard */; };
+		FF2131E01AB9720C00351B18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2131DF1AB9720C00351B18 /* Images.xcassets */; };
+		FF2131E31AB9720C00351B18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2131E11AB9720C00351B18 /* LaunchScreen.xib */; };
+		FF2131EF1AB9720C00351B18 /* BikesRidersPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2131EE1AB9720C00351B18 /* BikesRidersPinTests.swift */; };
+		FF2131F91AB972BA00351B18 /* BikesRidersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2131F81AB972BA00351B18 /* BikesRidersTableViewController.swift */; };
+		FF2131FB1AB98F7900351B18 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2131FA1AB98F7800351B18 /* CustomTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF2131E91AB9720C00351B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF2131CB1AB9720C00351B18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF2131D21AB9720C00351B18;
+			remoteInfo = BikesRidersPin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D34D5481ABBC66A0082DD94 /* AddNewRiderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewRiderViewController.swift; sourceTree = "<group>"; };
+		1D34D54A1ABBCD470082DD94 /* detailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
+		FF2131D31AB9720C00351B18 /* BikesRidersPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikesRidersPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2131D71AB9720C00351B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF2131D81AB9720C00351B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF2131DD1AB9720C00351B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF2131DF1AB9720C00351B18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF2131E21AB9720C00351B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FF2131E81AB9720C00351B18 /* BikesRidersPinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikesRidersPinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2131ED1AB9720C00351B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF2131EE1AB9720C00351B18 /* BikesRidersPinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesRidersPinTests.swift; sourceTree = "<group>"; };
+		FF2131F81AB972BA00351B18 /* BikesRidersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikesRidersTableViewController.swift; path = ../BikesRidersTableViewController.swift; sourceTree = "<group>"; };
+		FF2131FA1AB98F7800351B18 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF2131D01AB9720C00351B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2131E51AB9720C00351B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF2131CA1AB9720C00351B18 = {
+			isa = PBXGroup;
+			children = (
+				FF2131D51AB9720C00351B18 /* BikesRidersPin */,
+				FF2131EB1AB9720C00351B18 /* BikesRidersPinTests */,
+				FF2131D41AB9720C00351B18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF2131D41AB9720C00351B18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF2131D31AB9720C00351B18 /* BikesRidersPin.app */,
+				FF2131E81AB9720C00351B18 /* BikesRidersPinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF2131D51AB9720C00351B18 /* BikesRidersPin */ = {
+			isa = PBXGroup;
+			children = (
+				FF2131F81AB972BA00351B18 /* BikesRidersTableViewController.swift */,
+				1D34D5481ABBC66A0082DD94 /* AddNewRiderViewController.swift */,
+				FF2131D81AB9720C00351B18 /* AppDelegate.swift */,
+				FF2131DC1AB9720C00351B18 /* Main.storyboard */,
+				1D34D54A1ABBCD470082DD94 /* detailsViewController.swift */,
+				FF2131FA1AB98F7800351B18 /* CustomTableViewCell.swift */,
+				FF2131DF1AB9720C00351B18 /* Images.xcassets */,
+				FF2131E11AB9720C00351B18 /* LaunchScreen.xib */,
+				FF2131D61AB9720C00351B18 /* Supporting Files */,
+			);
+			path = BikesRidersPin;
+			sourceTree = "<group>";
+		};
+		FF2131D61AB9720C00351B18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF2131D71AB9720C00351B18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF2131EB1AB9720C00351B18 /* BikesRidersPinTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF2131EE1AB9720C00351B18 /* BikesRidersPinTests.swift */,
+				FF2131EC1AB9720C00351B18 /* Supporting Files */,
+			);
+			path = BikesRidersPinTests;
+			sourceTree = "<group>";
+		};
+		FF2131EC1AB9720C00351B18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF2131ED1AB9720C00351B18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF2131D21AB9720C00351B18 /* BikesRidersPin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2131F21AB9720C00351B18 /* Build configuration list for PBXNativeTarget "BikesRidersPin" */;
+			buildPhases = (
+				FF2131CF1AB9720C00351B18 /* Sources */,
+				FF2131D01AB9720C00351B18 /* Frameworks */,
+				FF2131D11AB9720C00351B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BikesRidersPin;
+			productName = BikesRidersPin;
+			productReference = FF2131D31AB9720C00351B18 /* BikesRidersPin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF2131E71AB9720C00351B18 /* BikesRidersPinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2131F51AB9720C00351B18 /* Build configuration list for PBXNativeTarget "BikesRidersPinTests" */;
+			buildPhases = (
+				FF2131E41AB9720C00351B18 /* Sources */,
+				FF2131E51AB9720C00351B18 /* Frameworks */,
+				FF2131E61AB9720C00351B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF2131EA1AB9720C00351B18 /* PBXTargetDependency */,
+			);
+			name = BikesRidersPinTests;
+			productName = BikesRidersPinTests;
+			productReference = FF2131E81AB9720C00351B18 /* BikesRidersPinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF2131CB1AB9720C00351B18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = JCL;
+				TargetAttributes = {
+					FF2131D21AB9720C00351B18 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FF2131E71AB9720C00351B18 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FF2131D21AB9720C00351B18;
+					};
+				};
+			};
+			buildConfigurationList = FF2131CE1AB9720C00351B18 /* Build configuration list for PBXProject "BikesRidersPin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF2131CA1AB9720C00351B18;
+			productRefGroup = FF2131D41AB9720C00351B18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF2131D21AB9720C00351B18 /* BikesRidersPin */,
+				FF2131E71AB9720C00351B18 /* BikesRidersPinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF2131D11AB9720C00351B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2131DE1AB9720C00351B18 /* Main.storyboard in Resources */,
+				FF2131E31AB9720C00351B18 /* LaunchScreen.xib in Resources */,
+				FF2131E01AB9720C00351B18 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2131E61AB9720C00351B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF2131CF1AB9720C00351B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D34D54B1ABBCD470082DD94 /* detailsViewController.swift in Sources */,
+				FF2131FB1AB98F7900351B18 /* CustomTableViewCell.swift in Sources */,
+				FF2131D91AB9720C00351B18 /* AppDelegate.swift in Sources */,
+				1D34D5491ABBC66A0082DD94 /* AddNewRiderViewController.swift in Sources */,
+				FF2131F91AB972BA00351B18 /* BikesRidersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2131E41AB9720C00351B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2131EF1AB9720C00351B18 /* BikesRidersPinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF2131EA1AB9720C00351B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF2131D21AB9720C00351B18 /* BikesRidersPin */;
+			targetProxy = FF2131E91AB9720C00351B18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF2131DC1AB9720C00351B18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF2131DD1AB9720C00351B18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF2131E11AB9720C00351B18 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF2131E21AB9720C00351B18 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF2131F01AB9720C00351B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF2131F11AB9720C00351B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF2131F31AB9720C00351B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BikesRidersPin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF2131F41AB9720C00351B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BikesRidersPin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF2131F61AB9720C00351B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BikesRidersPinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikesRidersPin.app/BikesRidersPin";
+			};
+			name = Debug;
+		};
+		FF2131F71AB9720C00351B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BikesRidersPinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikesRidersPin.app/BikesRidersPin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF2131CE1AB9720C00351B18 /* Build configuration list for PBXProject "BikesRidersPin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2131F01AB9720C00351B18 /* Debug */,
+				FF2131F11AB9720C00351B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2131F21AB9720C00351B18 /* Build configuration list for PBXNativeTarget "BikesRidersPin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2131F31AB9720C00351B18 /* Debug */,
+				FF2131F41AB9720C00351B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2131F51AB9720C00351B18 /* Build configuration list for PBXNativeTarget "BikesRidersPinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2131F61AB9720C00351B18 /* Debug */,
+				FF2131F71AB9720C00351B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF2131CB1AB9720C00351B18 /* Project object */;
+}
