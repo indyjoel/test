@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D34D5491ABBC66A0082DD94 /* AddNewRiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34D5481ABBC66A0082DD94 /* AddNewRiderViewController.swift */; };
+		1D34D54B1ABBCD470082DD94 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34D54A1ABBCD470082DD94 /* detailsViewController.swift */; };
 		FF2131D91AB9720C00351B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2131D81AB9720C00351B18 /* AppDelegate.swift */; };
 		FF2131DE1AB9720C00351B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2131DC1AB9720C00351B18 /* Main.storyboard */; };
 		FF2131E01AB9720C00351B18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2131DF1AB9720C00351B18 /* Images.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D34D5481ABBC66A0082DD94 /* AddNewRiderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewRiderViewController.swift; sourceTree = "<group>"; };
+		1D34D54A1ABBCD470082DD94 /* detailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 		FF2131D31AB9720C00351B18 /* BikesRidersPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikesRidersPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2131D71AB9720C00351B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2131D81AB9720C00351B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				FF2131F81AB972BA00351B18 /* BikesRidersTableViewController.swift */,
+				1D34D5481ABBC66A0082DD94 /* AddNewRiderViewController.swift */,
 				FF2131D81AB9720C00351B18 /* AppDelegate.swift */,
 				FF2131DC1AB9720C00351B18 /* Main.storyboard */,
+				1D34D54A1ABBCD470082DD94 /* detailsViewController.swift */,
 				FF2131FA1AB98F7800351B18 /* CustomTableViewCell.swift */,
 				FF2131DF1AB9720C00351B18 /* Images.xcassets */,
 				FF2131E11AB9720C00351B18 /* LaunchScreen.xib */,
@@ -215,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D34D54B1ABBCD470082DD94 /* detailsViewController.swift in Sources */,
 				FF2131FB1AB98F7900351B18 /* CustomTableViewCell.swift in Sources */,
 				FF2131D91AB9720C00351B18 /* AppDelegate.swift in Sources */,
+				1D34D5491ABBC66A0082DD94 /* AddNewRiderViewController.swift in Sources */,
 				FF2131F91AB972BA00351B18 /* BikesRidersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +419,7 @@
 				FF2131F41AB9720C00351B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF2131F51AB9720C00351B18 /* Build configuration list for PBXNativeTarget "BikesRidersPinTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				FF2131F71AB9720C00351B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

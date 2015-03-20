@@ -127,6 +127,10 @@ class BikesRidersTableViewController: UITableViewController {
         "Customer Ducati"
     ]
 
+    @IBAction func unwindFromAddNewRiderViewController(segue:UIStoryboardSegue)
+    {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -214,14 +218,26 @@ class BikesRidersTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        println("id is \(segue.identifier)")
+        if segue.identifier == "showBikeDetails" {
+            if let indexPath = self.tableView.indexPathForSelectedRow()  {
+                //let destinationController = segue.destinationViewController as detailsViewController
+                //destinationController.bikeDetailsToShow.text = bikeRidersMake[indexPath.row]
+                println("indexpath is \(self.bikeRidersMake[indexPath.row])")
+                //println("destinations control is \(destinationController)")
+                
+                let row = (view as UITableView).indexPathForSelectedRow()?.row
+                
+                println("the row is \(row)")
+                
+                (segue.destinationViewController as detailsViewController).theBikeDetailsToShow = bikeRidersMake[row!]
+            }
+        }
     }
-    */
+    
 
 }
