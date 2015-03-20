@@ -19,25 +19,7 @@ class BikesRidersTableViewController: UITableViewController {
         "A. IANNONE",
         "B. SMITH",
         "C. CRUTCHLOW",
-        "D. PEDROSA",
-        "D. PETRUCCI",
-        "E. LAVERTY",
-        "H. BARBERA",
-        "J. LORENZO",
-        "J. MILLER",
-        "K. ABRAHAM",
-        "L. BAZ",
-        "M. DI MEGLIO",
-        "M. MARQUEZ",
-        "M. MELANDRI",
-        "N. VINALES",
-        "N. HAYDEN",
-        "P. ESPARGARO",
-        "S. BRADL",
-        "S. REDDING",
-        "V. ROSSI",
-        "Y. HERNANDEZ"
-    ]
+        "D. PEDROSA"]
     
     var bikeRidersNamesImages =
     [
@@ -48,25 +30,8 @@ class BikesRidersTableViewController: UITableViewController {
         "AIannone.jpg",
         "BSmith.jpg",
         "CCrutchlow.jpg",
-        "DPedrosa.jpg",
-        "DPetrucci.jpg",
-        "ELaverty.jpg",
-        "HBarbera.jpg",
-        "JLorenzo.jpg",
-        "JMiller.jpg",
-        "KAbraham.jpg",
-        "LBaz.jpg",
-        "MDiMeglio.jpg",
-        "MMarquez.jpg",
-        "MMelandri.jpg",
-        "NVinales.jpg",
-        "NHayden.jpg",
-        "PEspargo.jpg",
-        "SBradl.jpg",
-        "SRedding.jpg",
-        "VRossi.jpg",
-        "YHernandez.jpg"
-    ]
+        "DPedrosa.jpg"
+            ]
 
 
     var bikeRidersTeam =
@@ -78,24 +43,7 @@ class BikesRidersTableViewController: UITableViewController {
         "Ducati Team",
         "Monster Yamaha Tech 3",
         "CWM LCR Honda",
-        "Repsol Honda Team",
-        "Pramac Racing",
-        "Drive M7 Aspar",
-        "Avintia Racing",
-        "Movistar Yamaha MotoGP",
-        "CWM LCR Honda",
-        "A.B MotorRacing",
-        "Athinà Forward Racing",
-        "Avintia Racing",
-        "Repsol Honda Team",
-        "Aprilia Racing Team Gresini",
-        "Team SUZUKI ECSTAR",
-        "Drive M7 Aspar",
-        "Monster Yamaha Tech 3",
-        "Athinà Forward Racing",
-        "Estrella Galicia 0,0 Marc VDS",
-        "Movistar Yamaha MotoGP",
-        "Pramac Racing"
+        "Repsol Honda Team"
     ]
     
     var bikeRidersMake =
@@ -107,28 +55,28 @@ class BikesRidersTableViewController: UITableViewController {
         "Ducati",
         "Yamaha",
         "Honda",
-        "Honda",
-        "Pramac Racing",
-        "Customer Honda",
-        "Customer Ducati",
-        "Yamaha",
-        "Honda",
-        "Customer Honda",
-        "Open Customer Honda",
-        "FTR-Kawasaki",
-        "Honda",
-        "Aprilia",
-        "SUZUKI",
-        "Customer Honda",
-        "Yamaha",
-        "Athinà Forward Racing",
-        "Customer Honda",
-        "Yamaha",
-        "Customer Ducati"
-    ]
+        "Honda"]
 
+    //func addNewContact(riderName : String, riderTeam : String, bikeManufacturer: String )
+
+    func addNewContact(riderName : String, bikeRidersTeam : String, bikeRidersMake : String)
+    {
+        
+        bikeRidersNames.append(riderName)
+        bikeRidersTeam.append(bikeRidersTeam)
+        bikeRidersMake.append(bikeRidersMake)
+        tableView.reloadData()
+    }
+    
+
+    
+    
     @IBAction func unwindFromAddNewRiderViewController(segue:UIStoryboardSegue)
     {
+        let rider = (segue.sourceViewController as AddNewRiderViewController).renderForm()
+        let bikeRidersTeam = "New Team"
+        let bikeRidersMake = "New Make"
+        self.addNewContact(riderName : rider, bikeRidersTeam: bikeRidersTeam, bikeRidersMake: bikeRidersMake)
         
     }
     
@@ -221,19 +169,14 @@ class BikesRidersTableViewController: UITableViewController {
     
     // MARK: - Navigation
 
+        //Prepare for the segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        println("id is \(segue.identifier)")
+        //println("id is \(segue.identifier)")
         if segue.identifier == "showBikeDetails" {
             if let indexPath = self.tableView.indexPathForSelectedRow()  {
-                //let destinationController = segue.destinationViewController as detailsViewController
-                //destinationController.bikeDetailsToShow.text = bikeRidersMake[indexPath.row]
-                println("indexpath is \(self.bikeRidersMake[indexPath.row])")
-                //println("destinations control is \(destinationController)")
-                
+                //println("indexpath is \(self.bikeRidersMake[indexPath.row])")
                 let row = (view as UITableView).indexPathForSelectedRow()?.row
-                
-                println("the row is \(row)")
-                
+                //println("the row is \(row)")
                 (segue.destinationViewController as detailsViewController).theBikeDetailsToShow = bikeRidersMake[row!]
             }
         }

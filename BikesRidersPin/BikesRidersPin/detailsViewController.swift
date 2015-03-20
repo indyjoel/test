@@ -11,15 +11,18 @@ import UIKit
 class detailsViewController: UIViewController {
 
     @IBOutlet var imageToShow: UIImageView!
-    var theimageToShow : String!
-    var theBikeDetailsToShow : String!
-    
+    @IBOutlet var riderName: UILabel!
     @IBOutlet var bikeDetailsToShow: UILabel!
     
-
+    var theimageToShow : String!
+    var theBikeDetailsToShow : String!
+    var theRiderNameToShow : String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bikeDetailsToShow.text = theBikeDetailsToShow
+        //riderName.text = theRiderNameToShow
         
         // Do any additional setup after loading the view.
     }

@@ -10,6 +10,20 @@ import UIKit
 
 class AddNewRiderViewController: UIViewController {
 
+    @IBOutlet var riderName: UITextField!
+    @IBOutlet var riderTeam: UITextField!
+    @IBOutlet var bikeManufacturer: UITextField!
+    
+    
+    func renderForm() -> (String, String, String)
+    {
+        let riderNameToReturn : String = riderName.text
+        let riderTeamToReturn = riderTeam.text
+        let bikeManufacturerToReturn = bikeManufacturer.text
+        
+        return (riderNameToReturn,riderTeamToReturn,bikeManufacturerToReturn)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
