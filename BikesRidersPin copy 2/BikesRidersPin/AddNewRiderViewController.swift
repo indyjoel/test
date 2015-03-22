@@ -15,7 +15,9 @@ class AddNewRiderViewController: UIViewController {
     @IBOutlet var bikeManufacturer: UITextField!
     @IBOutlet var imageName: UITextField!
     
-    
+    //at the moment i cant figure out how to add an image
+    //all the fields needs to be entered
+    //on the rider detail a new entry will not show an image
     func renderForm() -> [String : String?]
     {
         let riders = [

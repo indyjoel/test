@@ -18,6 +18,8 @@ class detailsViewController: UIViewController {
     var rider = ["":""]
 
     
+    //as i dont know how to add an image any new riders will show a blank image
+    //but all fields must be entered
     override func viewDidLoad() {
         super.viewDidLoad()
         
