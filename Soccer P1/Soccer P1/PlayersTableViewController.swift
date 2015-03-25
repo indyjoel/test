@@ -125,14 +125,20 @@ class PlayersTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        println("in the prep the segue")
+        if let indexPath = self.tableView.indexPathForSelectedRow() {
+            let row = (view as UITableView).indexPathForSelectedRow()?.row
+            (segue.destinationViewController as showPlayerViewController).Players = Players[row!]
+        }
+        
     }
-    */
+    
 
 }

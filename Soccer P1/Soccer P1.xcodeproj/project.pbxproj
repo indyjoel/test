@@ -14,6 +14,7 @@
 		1D7D9C811AC267F2009E779E /* Soccer_P1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D9C801AC267F2009E779E /* Soccer_P1Tests.swift */; };
 		1D7D9C8B1AC2683E009E779E /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D9C8A1AC2683E009E779E /* PlayersTableViewController.swift */; };
 		1D7D9C8D1AC27127009E779E /* AddNewPlayerVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D9C8C1AC27127009E779E /* AddNewPlayerVCViewController.swift */; };
+		FF9E4F411AC2B042000828E3 /* showPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E4F401AC2B042000828E3 /* showPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1D7D9C801AC267F2009E779E /* Soccer_P1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soccer_P1Tests.swift; sourceTree = "<group>"; };
 		1D7D9C8A1AC2683E009E779E /* PlayersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
 		1D7D9C8C1AC27127009E779E /* AddNewPlayerVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPlayerVCViewController.swift; sourceTree = "<group>"; };
+		FF9E4F401AC2B042000828E3 /* showPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				1D7D9C6A1AC267F2009E779E /* AppDelegate.swift */,
 				1D7D9C8A1AC2683E009E779E /* PlayersTableViewController.swift */,
 				1D7D9C6E1AC267F2009E779E /* Main.storyboard */,
+				FF9E4F401AC2B042000828E3 /* showPlayerViewController.swift */,
 				1D7D9C8C1AC27127009E779E /* AddNewPlayerVCViewController.swift */,
 				1D7D9C711AC267F2009E779E /* Images.xcassets */,
 				1D7D9C731AC267F2009E779E /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				1D7D9C8D1AC27127009E779E /* AddNewPlayerVCViewController.swift in Sources */,
 				1D7D9C6B1AC267F2009E779E /* AppDelegate.swift in Sources */,
+				FF9E4F411AC2B042000828E3 /* showPlayerViewController.swift in Sources */,
 				1D7D9C8B1AC2683E009E779E /* PlayersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				1D7D9C861AC267F2009E779E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D7D9C871AC267F2009E779E /* Build configuration list for PBXNativeTarget "Soccer P1Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				1D7D9C891AC267F2009E779E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
