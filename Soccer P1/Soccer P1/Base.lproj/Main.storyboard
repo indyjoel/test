@@ -218,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="P" id="aGd-D9-sNW"/>
+                    <tabBarItem key="tabBarItem" title="" image="second" id="aGd-D9-sNW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2v-mT-PXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,6 +262,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="P" width="48" height="49"/>
+        <image name="second" width="30" height="30"/>
     </resources>
 </document>
